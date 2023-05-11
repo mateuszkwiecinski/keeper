@@ -69,6 +69,10 @@ include(":sample-libraries:test-only-android")
 
 include(":sample-libraries:test-only-jvm")
 
+include(":repro:app")
+include(":repro:ui-testing")
+include(":repro:testing-common")
+
 includeBuild("keeper-gradle-plugin") {
   dependencySubstitution { substitute(module("com.slack.keeper:keeper")).using(project(":")) }
 }

@@ -1,0 +1,17 @@
+plugins {
+    id("org.jetbrains.kotlin.jvm")
+    id("java-test-fixtures")
+}
+
+kotlin {
+    jvmToolchain(17)
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testFixturesImplementation testFixtures(project(":repro:testing-common"))
+//    testFixturesApi testFixtures(project(":testing-common"))
+}
