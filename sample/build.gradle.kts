@@ -32,13 +32,13 @@ plugins {
 }
 
 android {
-  compileSdk = 33
+  compileSdk = 36
   namespace = "com.slack.keeper.sample"
 
   defaultConfig {
     applicationId = "com.slack.keeper.example"
     minSdk = 21
-    targetSdk = 33
+    targetSdk = 36
     versionCode = 1
     versionName = "1"
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
